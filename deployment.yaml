@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: flask-webapp
-          image: docker.io/andhikadn11/flask-webapp:2212210850
+          image: docker.io/andhikadn11/flask-webapp:v1.0.0
           ports:
             - containerPort: 80
 
