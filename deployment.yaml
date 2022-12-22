@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-webapp
+  name: simple-webapp
   namespace: webapp
 spec:
   selector:
     matchLabels:
-      app: flask-webapp
+      app: simple-webapp
   replicas: 2
   template:
     metadata:
       labels:
-        app: flask-webapp
+        app: simple-webapp
     spec:
       containers:
-        - name: flask-webapp
-          image: docker.io/andhikadn11/flask-webapp:v1.0.0
+        - name: simple-webapp
+          image: docker.io/andhikadn11/webapp:v1.0.0
           ports:
             - containerPort: 80
 
